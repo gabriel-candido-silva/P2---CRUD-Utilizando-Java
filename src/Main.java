@@ -1,21 +1,21 @@
-import model.Conexao;
+import Login.Conexao;
+import Login.TelaLogin;
 
-import java.sql.SQLException;
+public class Main {
+    public static void main(String[] args) {
+        // Teste inicial de conexão com o banco de dados
+        Conexao c = new Conexao();
+        c.abrirConexao();
 
-void main() {
-    Conexao c = new Conexao();
+        try {
+            Thread.sleep(2000); // Aguarda brevemente e fecha a conexão de teste
+            c.fecharConexao();
+        } catch (InterruptedException ex) {
+            System.out.println("Houve algum problema ao fechar a conexão: " + ex.getMessage());
+        }
 
-    c.abrirConexao();
-
-    try {
-        Thread.sleep(4000); // definimos um tempo para que o programa espere para fechar a conexão
-        c.fecharConexao();
-    } catch (InterruptedException ex) {
-        System.out.println("Houve algum problema ao fechar a conexão" + ex.getMessage());
-
+        // Iniciando a tela de login
+        TelaLogin t = new TelaLogin();
+        t.abreTela();
     }
-
-    // iniciando tela de login
-    TelaLogin t = new TelaLogin();
-    t.abrirTela();
 }
