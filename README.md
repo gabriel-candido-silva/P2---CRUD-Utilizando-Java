@@ -6,13 +6,13 @@ Este projeto foi desenvolvido como avaliacao P2 da disciplina de Desenvolvimento
 
 ---
 
-## Linguagem e Versao
+## Linguagem e Versão
 
 - Java (JDK 25 ou superior recomendado)
 
 ---
 
-## Bibliotecas e Dependencias
+## Bibliotecas e Dependências
 
 ### Biblioteca Java padrao utilizada
 
@@ -26,7 +26,7 @@ Este projeto foi desenvolvido como avaliacao P2 da disciplina de Desenvolvimento
 
 ---
 
-## Ferramentas Necessarias
+## Ferramentas Necessárias
 
 ### 1. JDK (Java Development Kit)
 
@@ -60,7 +60,7 @@ Para conectar o MySQL Workbench ao banco na porta 3308:
 
 ---
 
-## Configuracao do Banco de Dados
+## Configuração do Banco de Dados
 
 O arquivo `schema.sql` localizado na raiz do projeto contem o script de criacao do banco de dados. Execute-o no MySQL Workbench ou diretamente no terminal MySQL antes de iniciar a aplicacao.
 
@@ -103,7 +103,7 @@ ConexaoComBanco/
 
 ---
 
-## Descricao das Classes
+## Descrição das Classes
 
 ### Main.java
 
@@ -143,7 +143,7 @@ Tela de atualizacao de dados. Exibe o nome atual do usuario preenchido automatic
 
 ---
 
-## Fluxo da Aplicacao
+## Fluxo da Aplicação
 
 ```
 Main
